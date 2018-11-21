@@ -1,0 +1,35 @@
+def add(n1,n2):
+    print(n1+n2)
+    return
+
+
+def sub( n1, n2):
+    print (n1-n2)
+    return
+
+
+def multiple(n1,n2):
+    print ( n1* n2)
+    return
+
+
+def div(n1, n2):
+    print (n1/n2)
+    return
+
+
+n1 = float(input("Enter The First Number: "))
+n2 = float(input("Enter The Second Number: "))
+choice = int(input("Press 1. for Addition Press 2. for Subtraction Press 3. for Multiplication Press 4. for Division2"))
+if choice == 1:
+    add(n1, n2)
+elif choice == 2:
+    sub(n1, n2)
+elif choice == 3:
+    multiple(n1, n2)
+elif choice == 4:
+    div (n1, n2)
+else:
+    print("Wrong Choice! ")
+
+
