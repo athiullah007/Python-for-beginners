@@ -1,22 +1,30 @@
 # This is a simple program for calculating basic arithmetic values
 import numpy as np
 
-def add( n1, n2): # This function takes 2 values from the user for adding them
-    print("the sum is\t",n1+n2)
-    return
+def add(): # This function takes 2 values from the user for adding them
+	n1 = float(input("Enter The First Number: ")) # This is where the user has to enter values for calculating purpose
+	n2 = float(input("Enter The Second Number: "))
+	print("the sum is\t",n1+n2)
+	return
 
 
-def sub( n1, n2): # This function takes 2 values from the user for subtracting them
-    print ("the diff is\t",n1-n2)
-    return
+def sub(): # This function takes 2 values from the user for subtracting them
+	n1 = float(input("Enter The First Number: ")) # This is where the user has to enter values for calculating purpose
+	n2 = float(input("Enter The Second Number: "))
+	print ("the diff is\t",n1-n2)
+	return
 
 
-def multiple(n1,n2): # This function takes 2 values from the user for multiplying them
-    print ("the prod is\t",n1* n2)
-    return
+def multiple(): # This function takes 2 values from the user for multiplying them
+	n1 = float(input("Enter The First Number: ")) # This is where the user has to enter values for calculating purpose
+	n2 = float(input("Enter The Second Number: "))
+	print ("the prod is\t",n1* n2)
+	return
 
 
-def div(n1, n2): # This function takes 2 values from the user for dividing them (The zero error is fixed)
+def div(): # This function takes 2 values from the user for dividing them (The zero error is fixed)
+	n1 = float(input("Enter The First Number: ")) # This is where the user has to enter values for calculating purpose
+	n2 = float(input("Enter The Second Number: "))
 	if n1==0 or n2==0:
 		print("Can't divide by zero!")
 	else:
@@ -24,7 +32,7 @@ def div(n1, n2): # This function takes 2 values from the user for dividing them 
 	return
 
 
-def Average(n1, n2): # This function first asks the user to enter the total value and then calculates the average
+def average(): # This function first asks the user to enter the total value and then calculates the average
 	n1=int(input("Enter the number of elements to be inserted: "))
 	n2=[]
 	for i in range(0,n1):
@@ -34,15 +42,15 @@ def Average(n1, n2): # This function first asks the user to enter the total valu
 	print("Average of elements in the list \t",round(avg,2))
 	return
 
-"""
-def SquareRoot( number): # This functions takes 1 value from the user other then Zero (0) to calculate its average
-    number = float (input("Enter a number to find the square root : "))
-	if (number <=0):
+# This functions takes 1 value from the user other then Zero (0) to calculate its average
+def squareRoot(): 
+	number = float (input("Enter a number to find the square root : "))
+	if number < 0:
 		print("Please enter a valid number.")
 	else:
 		sq_root = np.sqrt(number)
-		print("Square root of {} is {} ".format(number,sq_root))
-    return """
+		print("Square root is\t", sq_root)
+	return
 	
 
 # This asks the user to enter the number for accessing the arithmetic operation they want to use
@@ -52,31 +60,31 @@ choice = int(input(" Press 1. for Addition\n Press 2. for Subtraction\n"
 
 
 if __name__ == '__main__': # This is the main function where everything related to average happens
-	n1 = float(input("Enter The First Number: ")) # This is where the user has to enter values for calculating purpose
-	n2 = float(input("Enter The Second Number: "))
-
+	#n1 = float(input("Enter The First Number: ")) # This is where the user has to enter values for calculating purpose
+	#n2 = float(input("Enter The Second Number: "))
+	#number = float(input("Enter number to calculate sqrt\t: ")) # This is where the user has to enter values for calculating purpose
 
 # We have all the conditions here. As it is mentioned at the very top to enter number for selecting Arithmetic Operations, this is where that number is called
 
-if choice == 1: # (1) calls the Addition Function
-    add(n1, n2)
+	if choice == 1: # (1) calls the Addition Function
+		add()
 
-elif choice == 2: # (2) calls the Subtraction Function
-    sub(n1, n2)
+	elif choice == 2: # (2) calls the Subtraction Function
+		sub()
 
-elif choice == 3: # (3) calls the Multiplication Function
-    multiple(n1, n2)
+	elif choice == 3: # (3) calls the Multiplication Function
+		multiple()
 
-elif choice == 4: # (4) calls the Division Function
-    div (n1, n2)
+	elif choice == 4: # (4) calls the Division Function
+		div ()
 
-elif choice==5: # (5) Calls the Average Function
-    Average(n1,n2)
+	elif choice==5: # (5) Calls the Average Function
+		average()
 
-elif choice == 6: # (6) calls the Square root function
-    SquareRoot(number)
-else: # Just in case if the user preses number other then from 1-6 , i.e 0,8,9 etc, it'll print that message
-    print("Wrong Choice! ")
+	elif choice == 6: # (6) calls the Square root function
+		squareRoot()
+	else: # Just in case if the user preses number other then from 1-6 , i.e 0,8,9 etc, it'll print that message
+		print("Wrong Choice! ")
 
 
 
