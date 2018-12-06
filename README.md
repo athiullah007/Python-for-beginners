@@ -16,9 +16,9 @@ sudo apt-get install python
 pip install numpy
 ```
 For windows
-'''
+```
 python -m pip install numpy
-'''
+```
 ## Author/s
 
 * **Athiullah Maqsoodi** 
