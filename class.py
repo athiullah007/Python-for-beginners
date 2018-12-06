@@ -1,3 +1,4 @@
+"""Reference: https://www.learnpython.org/en/Classes_and_Objects"""
 # define the Vehicle class
 class Vehicle:
     name = ""
@@ -24,3 +25,5 @@ car2.value = 10000.00
 # test code
 print(car1.description())
 print(car2.description())
+
+#end of file
