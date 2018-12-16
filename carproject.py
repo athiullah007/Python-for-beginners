@@ -5,7 +5,7 @@ def buyCar(i):
 	i = int(input(print("What type of car you want to buy? \n",
 								"Press 1 for BMW\n",
 								"Press 2 for Toyota\n",
-								"Press 3 for Mecedes\n",
+								"Press 3 for Ferrari\n",
 								"Press 4 for other\n")))
 	if i==1:
 		print("You bought BMW")
@@ -46,7 +46,7 @@ def sellCar(i):
 def repairCar(i):
 	i = int(input(print("What type of car you want to repair? \n",
 								"Press 1 for BMW\n",
-								"Press 2 for Toyota\n",
+								"Press 2 for Ferrari\n",
 								"Press 3 for Mecedes\n",
 								"Press 4 for other\n")))
 	if i==1:
